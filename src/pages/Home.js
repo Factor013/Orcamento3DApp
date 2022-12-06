@@ -22,7 +22,7 @@ export default function App() {
         
         try {
 
-            teste = await AsyncStorage.getItem('@ola')
+            teste = await AsyncStorage.getItem('@energia')
             alert(teste)
             
         } catch (error) {

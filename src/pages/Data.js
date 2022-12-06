@@ -24,7 +24,14 @@ export default function App() {
 
         try{
 
-           await AsyncStorage.setItem('@ola',consumo) //grava os dados com id @ola e o valor consumo ***temporario***s
+           await AsyncStorage.setItem('@consumo',String(consumo))
+           await AsyncStorage.setItem('@energia',String(energia))
+           await AsyncStorage.setItem('@filamento',String(filamento))
+           await AsyncStorage.setItem('@qtdComprada',String(qtdComprada))
+           await AsyncStorage.setItem('@erros',String(erros))
+           await AsyncStorage.setItem('@lucro',String(lucro))
+           await AsyncStorage.setItem('@fixacao',String(fixacao))
+           await AsyncStorage.setItem('@depreciacao',String(depreciacao)) //grava os dados com id @*** e o valor ***/ ***temporario***
 
         }catch(e){
             alert(e)
