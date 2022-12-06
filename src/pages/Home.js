@@ -2,15 +2,37 @@ import { StatusBar } from 'expo-status-bar';
 import { useState, useEffect } from 'react';
 import { Alert, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
-
-
-export default function App({route}) {
+export default function App() {
 
   
 
   const navigation = useNavigation();
+    
+    const[peso,setPeso]= useState(0)
+    const[tempo,setTempo]= useState(0)
+    const[result,setResult] = useState(0)
+    let teste = 0
 
+         
+    const calc = async () => {
+
+
+        
+        try {
+
+            teste = await AsyncStorage.getItem('@ola')
+            alert(teste)
+            
+        } catch (error) {
+            alert(error)
+        }
+
+    }
+
+        
+    
 
   return (
     <View style={styles.container}>
@@ -21,27 +43,36 @@ export default function App({route}) {
             <Text style={styles.text}>
                 Peso da Peça:
             </Text>
-            <TextInput style={styles.input} placeholder='gramas' keyboardType='numeric'/>
+            <TextInput style={styles.input} 
+                       placeholder='gramas' 
+                       keyboardType='numeric'
+                       value={peso} 
+                       onChangeText={(value) =>setPeso(value)}
+                       />
             <Text style={styles.text}>
                 Tempo Impressão:
             </Text>
-            <TextInput style={styles.input} placeholder='minutos' keyboardType='numeric'/>
+            <TextInput style={styles.input} 
+                       placeholder='minutos' 
+                       keyboardType='numeric' 
+                       value={tempo} 
+                       onChangeText={(value)=>{setTempo(value)}}/>
         </View>
         <View style={styles.result}>
             <Text style={styles.price}>
-                R$
+                R$ {} 
             </Text>
         </View>
         <View>
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity style={styles.button} onPress={()=>calc()}>
                 <Text style={{fontSize:30,color:'white',fontWeight:'500'}}>
                     Calcular
                 </Text>
             </TouchableOpacity>
         </View>
     </View>
-
   );
+
 }
 
 const styles = StyleSheet.create({
@@ -79,7 +110,6 @@ const styles = StyleSheet.create({
     paddingBottom:30,
    },
    result:{
-
     alignItems:'center',
     justifyContent:'center',
     width:400,
@@ -102,5 +132,6 @@ const styles = StyleSheet.create({
     fontWeight:'bold',
     color:'white',
     fontSize:50,
+    borderRadius:30
    }
 });
