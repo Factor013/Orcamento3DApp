@@ -12,22 +12,34 @@ export default function App() {
     
     const[peso,setPeso]= useState(0)
     const[tempo,setTempo]= useState(0)
-    const[result,setResult] = useState(0)
-    let teste = 0
+    let consumo,energia,filamento,qtdComprada,erros,lucro, fixacao,depreciacao,result = 0
 
          
-    const calc = async () => {
-
-
+     const calc = async () => {
         
         try {
 
-            teste = await AsyncStorage.getItem('@energia')
-            alert(teste)
+            consumo = await AsyncStorage.getItem('@consumo')
+            energia = await AsyncStorage.getItem('@energia')
+            filamento = await AsyncStorage.getItem('@filamento')
+            qtdComprada = await AsyncStorage.getItem('@qtdComprada')
+            erros = await AsyncStorage.getItem('@erros')
+            lucro = await AsyncStorage.getItem('@lucro')
+            fixacao = await AsyncStorage.getItem('@fixacao')
+            depreciacao = await AsyncStorage.getItem('@depreciacao')
             
         } catch (error) {
             alert(error)
         }
+
+        let gFila = (filamento/(qtdComprada*1000))* peso
+        let valorEner = (((consumo/100)*(tempo/60)))* energia
+        let taxaErr = ((parseFloat(gFila)+parseFloat(valorEner))*(erros/100))
+        let taxaDepre = ((parseFloat(gFila) + parseFloat(valorEner) + parseFloat(taxaErr)+ parseFloat(fixacao)))*(depreciacao/100)
+        let taxaLucro = (parseFloat(gFila) + parseFloat(valorEner) + parseFloat(taxaErr) + parseFloat(taxaDepre)+ parseFloat(fixacao))*(lucro/100)
+         result = parseFloat(gFila) + parseFloat(valorEner) + parseFloat(taxaErr) + parseFloat(taxaDepre) + parseFloat(fixacao)+ parseFloat(taxaLucro)
+
+        alert('R$ '+ result)
 
     }
 
@@ -60,7 +72,7 @@ export default function App() {
         </View>
         <View style={styles.result}>
             <Text style={styles.price}>
-                R$ {} 
+                R$ {result} 
             </Text>
         </View>
         <View>

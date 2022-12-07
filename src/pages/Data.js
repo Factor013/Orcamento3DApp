@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, TextInput, TouchableOpacity,} from 'react-nativ
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useNavigation } from '@react-navigation/native';
 import { useState, useEffect } from 'react';
+import {styles} from '../style'
 
 
 export default function App() {
@@ -32,6 +33,7 @@ export default function App() {
            await AsyncStorage.setItem('@lucro',String(lucro))
            await AsyncStorage.setItem('@fixacao',String(fixacao))
            await AsyncStorage.setItem('@depreciacao',String(depreciacao)) //grava os dados com id @*** e o valor ***/ ***temporario***
+           alert("Sucesso","Dados Salvos")
 
         }catch(e){
             alert(e)
@@ -132,53 +134,8 @@ export default function App() {
             Salvar Dados
         </Text>
     </TouchableOpacity>
-    </View>
+    </View >
   );
 }
 
 
-
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#dddd',
-      alignItems: 'center',
-      justifyContent:'center',
-     },
-     title:{
-        fontSize:40,
-        padding:20,
-        fontWeight:'500',
-        textShadowColor: 'rgba(0, 0, 0, 1)',
-        textShadowRadius:5
-     },
-     text:{
-        fontSize:18,
-        fontWeight:'bold',
-        paddingBottom:5,
-        paddingTop:5,
-     },
-     input: {
-      height:40,
-      width:180,
-      backgroundColor:'white'
-     },
-     form:{
-      backgroundColor:'#aaaa',
-      borderColor:'black',
-      borderRadius:10,
-      borderWidth:1,
-      borderColor:'grey',
-      margin:5,
-      padding:10
-     },
-     Save:{
-        height:80,
-        width:200,
-        margin:60,
-        backgroundColor:'black',
-        justifyContent:'center',
-        alignItems:'center',
-        borderRadius:15,
-     }
-  });
