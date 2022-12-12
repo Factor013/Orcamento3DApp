@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Alert, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import {styleHome} from '../Style'
 
 export default function App() {
 
@@ -12,7 +13,9 @@ export default function App() {
     
     const[peso,setPeso]= useState(0)
     const[tempo,setTempo]= useState(0)
-    let consumo,energia,filamento,qtdComprada,erros,lucro, fixacao,depreciacao,result = 0
+    var[result,setResult]= useState(0)
+    var consumo,energia,filamento,qtdComprada,erros,lucro, fixacao,depreciacao = 0
+
 
          
      const calc = async () => {
@@ -37,46 +40,40 @@ export default function App() {
         let taxaErr = ((parseFloat(gFila)+parseFloat(valorEner))*(erros/100))
         let taxaDepre = ((parseFloat(gFila) + parseFloat(valorEner) + parseFloat(taxaErr)+ parseFloat(fixacao)))*(depreciacao/100)
         let taxaLucro = (parseFloat(gFila) + parseFloat(valorEner) + parseFloat(taxaErr) + parseFloat(taxaDepre)+ parseFloat(fixacao))*(lucro/100)
-         result = parseFloat(gFila) + parseFloat(valorEner) + parseFloat(taxaErr) + parseFloat(taxaDepre) + parseFloat(fixacao)+ parseFloat(taxaLucro)
-
-        alert('R$ '+ result)
-
+        setResult(parseFloat(gFila) + parseFloat(valorEner) + parseFloat(taxaErr) + parseFloat(taxaDepre) + parseFloat(fixacao)+ parseFloat(taxaLucro))
     }
 
-        
-    
-
   return (
-    <View style={styles.container}>
-        <Text style={styles.title}>
+    <View style={styleHome.container}>
+        <Text style={styleHome.title}>
             ORÇAMENTO
         </Text>
-        <View style={styles.form}>
-            <Text style={styles.text}>
+        <View style={styleHome.form}>
+            <Text style={styleHome.text}>
                 Peso da Peça:
             </Text>
-            <TextInput style={styles.input} 
+            <TextInput style={styleHome.input} 
                        placeholder='gramas' 
                        keyboardType='numeric'
                        value={peso} 
                        onChangeText={(value) =>setPeso(value)}
                        />
-            <Text style={styles.text}>
+            <Text style={styleHome.text}>
                 Tempo Impressão:
             </Text>
-            <TextInput style={styles.input} 
+            <TextInput style={styleHome.input} 
                        placeholder='minutos' 
                        keyboardType='numeric' 
                        value={tempo} 
                        onChangeText={(value)=>{setTempo(value)}}/>
         </View>
-        <View style={styles.result}>
-            <Text style={styles.price}>
-                R$ {result} 
+        <View style={styleHome.result}>
+            <Text style={styleHome.price} >
+                R$ {result.toFixed(2)} 
             </Text>
         </View>
         <View>
-            <TouchableOpacity style={styles.button} onPress={()=>calc()}>
+            <TouchableOpacity style={styleHome.button} onPress={()=>calc()}>
                 <Text style={{fontSize:30,color:'white',fontWeight:'500'}}>
                     Calcular
                 </Text>
@@ -87,63 +84,3 @@ export default function App() {
 
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#dddd',
-    alignItems: 'center',
-    justifyContent:'space-evenly'
-   },
-   title:{
-    fontSize:40,
-    padding:20,
-    fontWeight:'500',
-    textShadowColor: 'rgba(0, 0, 0, 1)',
-    textShadowRadius:5
-    },
-   text:{
-    paddingBottom:5,
-    fontSize:30,
-    fontWeight:'500'
-   },
-   input: {
-    fontSize:20,
-    width:350,
-    height:50,
-    backgroundColor:'white',
-    borderRadius:5
-   },
-   form:{
-    backgroundColor:'#aaaa',
-    borderColor:'black',
-    borderRadius:5,
-    borderWidth:1,
-    padding:15,
-    paddingBottom:30,
-   },
-   result:{
-    alignItems:'center',
-    justifyContent:'center',
-    width:400,
-    height:150,
-    margin:20,
-    borderRadius:50,
-    borderColor:'black'
-   },
-   button:{
-        width:200,
-        height:80,
-        backgroundColor:'black',
-        alignItems: 'center',
-        justifyContent:'center',
-        borderRadius:15
-   },
-   price:{
-    padding:10,
-    backgroundColor:'rgb(0,250,154)',
-    fontWeight:'bold',
-    color:'white',
-    fontSize:50,
-    borderRadius:30
-   }
-});

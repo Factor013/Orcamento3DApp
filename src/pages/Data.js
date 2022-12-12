@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, TextInput, TouchableOpacity,} from 'react-nativ
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useNavigation } from '@react-navigation/native';
 import { useState, useEffect } from 'react';
-import {styles} from '../style'
+import {styleData} from '../Style'
 
 
 export default function App() {
@@ -41,49 +41,47 @@ export default function App() {
         
     }
 
-
-
   return (
-    <View style={styles.container}>
+    <View style={styleData.container}>
         <View>
-        <Text style={styles.title}>
+        <Text style={styleData.title}>
             VALORES PADRÃO
         </Text>
         </View>
         <View style={{flexDirection:'row'}}>
-        <View style={styles.form}>
-            <Text style={styles.text}>
+        <View style={styleData.form}>
+            <Text style={styleData.text}>
                 Consumo de Máquina:
             </Text>
-            <TextInput style={styles.input} 
+            <TextInput style={styleData.input} 
                     placeholder='450W' 
                     keyboardType='numeric'
                     value={consumo}
                     onChangeText={(value) =>setConsumo(value)}/>
-            <Text style={styles.text}>
+            <Text style={styleData.text}>
                 Energia:
             </Text>
-            <TextInput style={styles.input} 
-            placeholder='Kw/h' 
+            <TextInput style={styleData.input} 
+            placeholder='R$' 
             keyboardType='numeric'
             value={energia}
             onChangeText={(value) =>setEnergia(value)}/>
         </View>
-        <View style={styles.form}>
-            <Text style={styles.text}>
+        <View style={styleData.form}>
+            <Text style={styleData.text}>
                 Valor Filamento:
             </Text>
 
-            <TextInput style={styles.input} 
+            <TextInput style={styleData.input} 
             placeholder='R$' 
             keyboardType='numeric'
             value={filamento}
             onChangeText={(value) =>setFilamento(value)}/>
 
-            <Text style={styles.text}>
+            <Text style={styleData.text}>
                 Quantidade Comprada:
             </Text>
-            <TextInput style={styles.input} 
+            <TextInput style={styleData.input} 
             placeholder='Kg/Carretel' 
             keyboardType='numeric'
             value={qtdComprada}
@@ -92,44 +90,44 @@ export default function App() {
         </View>
 
         <View style={{flexDirection:'row'}}>
-        <View style={styles.form}>
-            <Text style={styles.text}>
+        <View style={styleData.form}>
+            <Text style={styleData.text}>
                 Taxa de Erros:
             </Text>
-            <TextInput style={styles.input} 
+            <TextInput style={styleData.input} 
             placeholder='%' 
             keyboardType='numeric'
             value={erros}
             onChangeText={(value) =>setErros(value)}/>
-            <Text style={styles.text}>
+            <Text style={styleData.text}>
                 Fixação de Peças:
             </Text>
-            <TextInput style={styles.input} 
+            <TextInput style={styleData.input} 
             placeholder='R$/Impressão' 
             keyboardType='numeric'
             value={fixacao}
             onChangeText={(value) =>setFixacao(value)}/>
         </View>
-        <View style={styles.form}>
-        <Text style={styles.text}>
+        <View style={styleData.form}>
+        <Text style={styleData.text}>
                 Lucro:
             </Text>
-            <TextInput style={styles.input} 
+            <TextInput style={styleData.input} 
             placeholder='%' 
             keyboardType='numeric'
             value={lucro}
             onChangeText={(value) =>setLucro(value)}/>
-            <Text style={styles.text}>
+            <Text style={styleData.text}>
                 Depreciação:
             </Text>
-            <TextInput style={styles.input} 
+            <TextInput style={styleData.input} 
             placeholder='%' 
             keyboardType='numeric'
             value={depreciacao}
             onChangeText={(value) =>setDepreciacao(value)}/>
         </View>
     </View>
-    <TouchableOpacity style={styles.Save} onPress={salvarDados}>
+    <TouchableOpacity style={styleData.Save} onPress={salvarDados}>
         <Text style={{fontSize:30,fontWeight:'bold',color:'white'}}>
             Salvar Dados
         </Text>
