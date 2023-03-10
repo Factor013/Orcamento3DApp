@@ -22,7 +22,7 @@
   <li>Lucro(porcentagem de lucro para cada peça).</li>
   <li>Depreciação(porcentagem de depreciação e desgaste de cada máquina a cada impressão)</li>
 </ul>
-<p> O botão "Salvar Dados" guarda com asyncStorage os dados digitados pelo usuário para realizar o cálculo posteriormente.
+<p> O botão "Salvar Dados" guarda com asyncStorage os dados digitados pelo usuário para realizar o cálculo posteriormente.<br>
 
 <div>
 &#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160
