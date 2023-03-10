@@ -5,8 +5,9 @@
 
 <h3>Aplicação desenvolvida usando Expo para auxiliar na realização de orçamentos de peças impressas em 3D.</h3>
 
-<div>
-Tela de Orçamento &#160&#160&#160&#160&#160&#160      
+<div align="center">
+Tela de Orçamento
+  &#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160
 Tela de Dados
 </div>
                                           
