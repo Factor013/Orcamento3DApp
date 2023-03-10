@@ -3,7 +3,7 @@
 ![Expo CLI](https://img.shields.io/badge/Expo-0.6.2-green)
 ![Ultima Atualizacao](https://img.shields.io/badge/realease%20date%3A-december%202022-orange)
 
-<h2>Aplicação desenvolvida usando Expo e React Native para auxiliar na realização de orçamentos de peças impressas em 3D.</h2> <br>
+<h2>Aplicação desenvolvida usando React Native e Expo  para auxiliar na realização de orçamentos de peças impressas em 3D.</h2> <br>
 <p>Conta com duas telas simples e campos a serem preenchidos antes de realizar o cálculo do orçamento.
 <p> Na tela ORÇAMENTO, temos dois campos:
  <ul>
