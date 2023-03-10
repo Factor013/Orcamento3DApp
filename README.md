@@ -1,6 +1,6 @@
 <h1 align="center"> Orçamento3DApp </h1>
 
-![Expo CLI]([http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge](https://img.shields.io/badge/Expo-0.6.2-lightgrey))
+![Expo CLI](https://img.shields.io/badge/Expo-0.6.2-lightgrey)
 
 <p>Aplicação desenvolvida usando Expo e a função AsyncStorage para armazenar dados da aplicação.
 
