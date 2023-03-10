@@ -38,4 +38,3 @@ Tela de Dados
 <img src="https://user-images.githubusercontent.com/28853497/224381317-a5a7378e-d994-4ad4-ae4f-aafe06b2703b.jpeg" width="200"/>
 </div><br>
 
-<b>OBS: </b>Para números com casas decimais é necessário usar Ponto(.) no lugar da Vírgula(,)
