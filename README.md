@@ -9,9 +9,7 @@
   <li>Consumo de máquina (medida em watts)</li>
   <li>Energia (preço por Kw/H)</li>
   <li>Taxa de Erros(porcentagem de erros para cada impressão)</li>
-  <li>Fixação de peças (preço por aditivo a cada impressão)</li>
-</ul>
-<ul> 
+  <li>Fixação de peças (preço por aditivo a cada impressão)</li> 
   <li>Valor do Filamento (Preço total da compra, independe do tamanho do carretel)</li>
   <li>Quantidade Comprada (Quantidade de filamento comprada)</li>
   <li>Lucro(porcentagem de lucro para cada peça)</li>
