@@ -3,7 +3,7 @@
 ![Expo CLI](https://img.shields.io/badge/Expo-0.6.2-lightgrey)
 ![Ultima Atualizacao](https://img.shields.io/badge/realease%20date%3A-december%202022-orange)
 
-<h2>Aplicação desenvolvida usando Expo para auxiliar na realização de orçamentos de peças impressas em 3D.</h2> <br>
+<h2>Aplicação desenvolvida usando Expo e React Native para auxiliar na realização de orçamentos de peças impressas em 3D.</h2> <br>
 
 <div>
 &#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160
@@ -18,4 +18,4 @@ Tela de Dados
 <img src="https://user-images.githubusercontent.com/28853497/224381317-a5a7378e-d994-4ad4-ae4f-aafe06b2703b.jpeg" width="200"/>
 </div>
 
-<h3>OBS: </h3>Para números com casas decimais é necessário usar Ponto(.) no lugar da Vírgula(,)
+<h2>OBS: </h2>Para números com casas decimais é necessário usar Ponto(.) no lugar da Vírgula(,)
