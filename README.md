@@ -8,7 +8,7 @@
 <p> Na tela ORÇAMENTO, temos dois campos:
  <ul>
    <li>Peso da Peça (peso da peça dado pelo fatiador)</li>  
-   <li>Tempo de Impressão (tempo de impressão da peça dado pelo fatiador)</li>
+   <li>Tempo de Impressão (tempo de impressão da peça EM MINUTOS dado pelo fatiador)</li>
  </ul>
  OBS: O cálculo só será realizado caso o usuário preencha e salve os dados na tela de DADOS.<br><br>
 <p> Na tela DADOS, temos campos essenciais para realizar o cálculo   de precificação das peças, como: 
