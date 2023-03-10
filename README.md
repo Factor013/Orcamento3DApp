@@ -3,13 +3,13 @@
 ![Expo CLI](https://img.shields.io/badge/Expo-0.6.2-lightgrey)
 ![Ultima Atualizacao](https://img.shields.io/badge/realease%20date%3A-december%202022-orange)
 
-<h3>Aplicação desenvolvida usando Expo para auxiliar na realização de orçamentos de peças impressas em 3D.</h3> <br>
+<h2>Aplicação desenvolvida usando Expo para auxiliar na realização de orçamentos de peças impressas em 3D.</h2> <br>
 
 <div>
 &#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160
-Tela de Orçamento 
+<h3>Tela de Orçamento </h3>
 &#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160
-Tela de Dados
+<h3>Tela de Dados</h3>
 </div>
 
 <div align="center" >
