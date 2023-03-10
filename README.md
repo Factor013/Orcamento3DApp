@@ -1,20 +1,21 @@
 <h1 align="center"> Orçamento3DApp </h1>
 
-![Expo CLI](https://img.shields.io/badge/Expo-0.6.2-lightgrey)
+![Expo CLI](https://img.shields.io/badge/Expo-0.6.2-green)
 ![Ultima Atualizacao](https://img.shields.io/badge/realease%20date%3A-december%202022-orange)
 
 <h2>Aplicação desenvolvida usando Expo e React Native para auxiliar na realização de orçamentos de peças impressas em 3D.</h2> <br>
 <p>Conta com duas telas simples e campos a serem preenchidos antes de realizar o cálculo do orçamento. <p> Na tela DADOS, temos campos essenciais para realizar o cálculo   de precificação das peças, como: 
 <ul> 
-  <li>Consumo de máquina (medida em watts)</li>
-  <li>Energia (preço por Kw/H)</li>
-  <li>Taxa de Erros(porcentagem de erros para cada impressão)</li>
-  <li>Fixação de peças (preço por aditivo a cada impressão)</li> 
-  <li>Valor do Filamento (Preço total da compra, independe do tamanho do carretel)</li>
-  <li>Quantidade Comprada (Quantidade de filamento comprada)</li>
-  <li>Lucro(porcentagem de lucro para cada peça)</li>
+  <li>Consumo de máquina (medida em watts).</li>
+  <li>Energia (preço por Kw/H).</li>
+  <li>Taxa de Erros(porcentagem de erros para cada impressão).</li>
+  <li>Fixação de peças (preço por aditivo a cada impressão).</li> 
+  <li>Valor do Filamento (Preço total da compra, independe do tamanho do carretel).</li>
+  <li>Quantidade Comprada (Quantidade de filamento comprada).</li>
+  <li>Lucro(porcentagem de lucro para cada peça).</li>
   <li>Depreciação(porcentagem de depreciação e desgaste de cada máquina a cada impressão)</li>
 </ul>
+<p> O botão "Salvar Dados" guarda com asyncStorage os dados digitados pelo usuário para realizar o cálculo posteriormente.
 
 <div>
 &#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160
