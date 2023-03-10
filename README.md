@@ -3,7 +3,10 @@
 ![Expo CLI](https://img.shields.io/badge/Expo-0.6.2-lightgrey)
 ![Ultima Atualizacao](https://img.shields.io/badge/realease%20date%3A-december%202022-orange)
 
-<h2>Aplicação desenvolvida usando Expo e React Native para auxiliar na realização de orçamentos de peças impressas em 3D.</h2> <br>
+<h2>Aplicação desenvolvida usando Expo e React Native para auxiliar na realização de orçamentos de peças impressas em 3D.</h2> <br><br>
+Conta com duas telas simples e campos a serem preenchidos antes de realizar o cálculo do orçamento. <p> Na tela DADOS, temos campos essenciais para realizar o cálculo   de precificação das peças, como: 
+<ul> Consumo de máquina (medida em watts)
+<ul> Energia (preço por Kw/H)
 
 <div>
 &#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160
