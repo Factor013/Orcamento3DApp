@@ -1,6 +1,6 @@
 <h1 align="center"> Orçamento3DApp </h1>
 <p align="center">
-<img src="https://img.shields.io/badge/Expo-0.6.2-green"/>
+<img src="https://img.shields.io/badge/Expo-0.6.2-blue"/>
 <img src="https://img.shields.io/badge/Status%3A-In%20Progress-green"/>
 </p>
 
