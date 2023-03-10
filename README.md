@@ -5,5 +5,8 @@
 
 <p>Aplicação desenvolvida usando Expo e a função AsyncStorage para armazenar dados da aplicação.
  
- 
-![Tela Inicial, Tela de Orçamento](https://user-images.githubusercontent.com/28853497/224380304-ecc6f5e3-0657-4328-ad02-4b6258a75c9c.jpeg)<br>                              ![Tela de Dados, onde o usuario pode armazenar dados como: preço do filamento, custo de energia e etc.](https://user-images.githubusercontent.com/28853497/224381317-a5a7378e-d994-4ad4-ae4f-aafe06b2703b.jpeg)
+<div align="center">
+ <img src="https://user-images.githubusercontent.com/28853497/224380304-ecc6f5e3-0657-4328-ad02-4b6258a75c9c.jpeg"/>
+</div>
+                            
+![Tela de Dados, onde o usuario pode armazenar dados como: preço do filamento, custo de energia e etc.](https://user-images.githubusercontent.com/28853497/224381317-a5a7378e-d994-4ad4-ae4f-aafe06b2703b.jpeg)
