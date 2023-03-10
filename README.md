@@ -5,8 +5,10 @@
 
 <h2>Aplicação desenvolvida usando Expo e React Native para auxiliar na realização de orçamentos de peças impressas em 3D.</h2> <br><br>
 Conta com duas telas simples e campos a serem preenchidos antes de realizar o cálculo do orçamento. <p> Na tela DADOS, temos campos essenciais para realizar o cálculo   de precificação das peças, como: 
-<ul> Consumo de máquina (medida em watts)
-<ul> Energia (preço por Kw/H)
+<ul> 
+  <li>Consumo de máquina (medida em watts)</li>
+  <li>Energia (preço por Kw/H)</li>
+</ul>
 
 <div>
 &#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160
