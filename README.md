@@ -4,15 +4,15 @@
 <img src="https://img.shields.io/badge/realease%20date%3A-december%202022-orange"/>
 </p>
 
-<h2>Aplicação desenvolvida usando React Native e Expo  para auxiliar na realização de orçamentos de peças impressas em 3D.</h2>
+<h2>Aplicação desenvolvida usando React Native e Expo para auxiliar a realização de orçamentos de peças impressas em 3D.</h2>
 <p>Conta com duas telas simples e campos a serem preenchidos antes de realizar o cálculo do orçamento.<br>
 <p> Na tela ORÇAMENTO, temos dois campos:
  <ul>
    <li>Peso da Peça (peso da peça dado pelo fatiador)</li>  
-   <li>Tempo de Impressão (tempo de impressão da peça EM MINUTOS dado pelo fatiador)</li>
+   <li>Tempo de Impressão (tempo de impressão da peça (EM MINUTOS) dado pelo fatiador)</li>
  </ul>
  OBS: O cálculo só será realizado caso o usuário preencha e salve os dados na tela de DADOS.<br><br>
-<p> Na tela DADOS, temos campos essenciais para realizar o cálculo   de precificação das peças, como: 
+<p> Na tela DADOS, temos campos essenciais para realizar o cálculo de precificação das peças, como: 
 <ul> 
   <li>Consumo de máquina (medida em watts).</li>
   <li>Energia (preço por Kw/H).</li>
@@ -23,7 +23,7 @@
   <li>Lucro(porcentagem de lucro para cada peça).</li>
   <li>Depreciação(porcentagem de depreciação e desgaste de cada máquina a cada impressão)</li>
 </ul>
-<p> O botão "Salvar Dados" guarda com asyncStorage os dados digitados pelo usuário para realizar o cálculo posteriormente.<br>
+<p> O botão "Salvar Dados" guarda com AsyncStorage os dados digitados pelo usuário para realizar o cálculo posteriormente.<br>
 
 <div>
 &#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160
