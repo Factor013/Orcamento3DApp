@@ -5,7 +5,7 @@
 
 <p>Aplicação desenvolvida usando Expo e a função AsyncStorage para armazenar dados da aplicação.
  
-<div align="center">
+<div align-items= "stretch">
  <img src="https://user-images.githubusercontent.com/28853497/224380304-ecc6f5e3-0657-4328-ad02-4b6258a75c9c.jpeg"/>
  <img src="https://user-images.githubusercontent.com/28853497/224381317-a5a7378e-d994-4ad4-ae4f-aafe06b2703b.jpeg"/>
 </div>
