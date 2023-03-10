@@ -1,11 +1,12 @@
 <h1 align="center"> Orçamento3DApp </h1>
 
 ![Expo CLI](https://img.shields.io/badge/Expo-0.6.2-lightgrey)
+![Ultima Atualizacao](https://img.shields.io/badge/realease%20date%3A-december%202022-orange)
 
 <p>Aplicação desenvolvida usando Expo e a função AsyncStorage para armazenar dados da aplicação.
 
  
-![Tela Inicial do App, Tela de Orçamento](https://user-images.githubusercontent.com/28853497/224371106-d8f58ddc-a19c-4014-af3b-e075f90683ee.jpeg)
+![Tela Inicial do App, Tela de Orçamento](https://user-images.githubusercontent.com/28853497/224371106-d8f58ddc-a19c-4014-af3b-e075f90683ee.jpeg {width=40px height=400px})
   
  
  
